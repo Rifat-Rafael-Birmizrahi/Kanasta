@@ -47,3 +47,12 @@ l6 {
 .allignThis:hover {
     1px solid #FFFF!important;
 }
+
+.hover-white{}
+
+@media (hover: hover) {
+    .hover-white:hover {
+        background-color: #FFFFFF!important;
+        color:#000000!important;
+    }
+}
