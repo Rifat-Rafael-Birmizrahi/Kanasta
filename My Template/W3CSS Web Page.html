@@ -13,23 +13,29 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
+
 </style>
 </head>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large"> <!--w3-signal-green-->
+  <div class="w3-theme w3-top w3-left-align w3-large" style=""><!--w3-bar  white-space: normal;-->
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1" style="max-width: 250px; width:100%;">Turkish Sefaradic Kanasta</a>
-    <a href="#" class="w3-bar-item w3-button w3-right w3-hover-white">Language</a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1" style="max-width: 250px; width:100%; display:inline-block; white-space: normal;">Turkish Sefaradic Kanasta</a>
+    <!--<a href="#" class="w3-bar-item w3-button w3-right w3-hover-white">Language</a>-->
+    <div class=" w3-right"><!--w3-dropdown-click-->
+      <button onclick="dropdown()" class=" w3-button w3-hover-white">
+        <img alt="Turk Bayragi" src="../country-flag-icons/3x2/TR.svg" class="flag-icon"/><l6 class="w3-hide-small">Türkçe</l6></button><!--w3-hover-white w3-bar-item-->
+      <div id="LanguageSelect" class="w3-dropdown-content w3-bar-block w3-border" style=" min-width: 67px;"><!--w3-bar-block  right:0;-->
+        <a href="#" class="w3-bar-item w3-button" style="white-space: nowrap;">
+          <img alt="Turk Bayragi" src="../country-flag-icons/3x2/TR.svg" class="flag-icon"/><l6 class="w3-hide-small">Türkçe</l6></a>
+        <a href="#" class="w3-bar-item w3-button" style="white-space: nowrap;">
+          <img alt="British Flag" src="../country-flag-icons/3x2/GB.svg" class="flag-icon"/><l6 class="w3-hide-small">English</l6></a>
+        <a href="#" class="w3-bar-item w3-button" style="white-space: nowrap;">
+          <img alt="Bandera de España" src="../country-flag-icons/3x2/ES.svg" class="flag-icon"/><l6 class="w3-hide-small">Español</l6></a>
+      </div>
+    </div>
     <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
@@ -38,6 +44,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>-->
   </div>
 </div>
+
+<script>
+  function dropdown() {
+    var x = document.getElementById("LanguageSelect");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
 
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">

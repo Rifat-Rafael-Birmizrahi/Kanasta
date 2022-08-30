@@ -20,3 +20,22 @@
 .w3-hover-theme:hover {color:#fff !important; background-color:#2e6830 !important}
 .w3-hover-text-theme:hover {color:#2e6830 !important}
 .w3-hover-border-theme:hover {border-color:#2e6830 !important}
+
+/*Extra classes that are not in a regular w3-theme */
+.w3-sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+}
+
+.flag-icon {
+    border-radius: 3px;
+    width: 35px;
+
+}
+
+l6 {
+    margin-left: 5px;
+}
