@@ -41,18 +41,15 @@ l6 {
     margin-right: 5px;
 }
 
-.allignThis {
-    1px solid #2e6830!important;
+@media (hover: none) {
+    .w3-hover-white {
+        color: #2e6830 !important;
+    }
 }
-.allignThis:hover {
-    1px solid #FFFF!important;
-}
-
-.hover-white{}
-
+/*.hover-white{}
 @media (hover: hover) {
     .hover-white:hover {
         background-color: #FFFFFF!important;
         color:#000000!important;
     }
-}
+}*/
