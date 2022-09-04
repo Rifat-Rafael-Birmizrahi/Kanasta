@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Kanasta.org</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../card-icons/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../Style/w3.css">
+  <link rel="stylesheet" href="../Style/w3-theme-kanasta.css">
+  <link rel="stylesheet" href="../Style/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../Style/roboto.css">
+
+
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
+  html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 </style>
 </head>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+  <div class="w3-theme w3-top w3-left-align w3-large" style=""><!--w3-bar  white-space: normal;-->
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1" style="max-width: 250px; width:100%; display:inline-block; white-space: normal;">Turkish Sefaradic Kanasta</a>
+
+    <div class=" w3-right"><!--w3-dropdown-click-->
+      <button onclick="dropdown()" class=" w3-button w3-hover-white " style="padding: 8px 12px">
+        <img alt="Turk Bayragi" src="../country-flag-icons/3x2/TR.svg" class="flag-icon"/><i class="w3-hide-small dropdown-text" >Türkçe</i></button>
+      <div id="LanguageSelect" class="w3-dropdown-content w3-bar-block w3-border " style=" min-width: 57px;">
+        <a href="#" class="w3-bar-item w3-button" style="white-space: nowrap; padding: 8px 11px">
+          <img alt="Turk Bayragi" src="../country-flag-icons/3x2/TR.svg" class="flag-icon"/><i class="w3-hide-small dropdown-text">Türkçe</i></a>
+        <a href="#" class="w3-bar-item w3-button" style="white-space: nowrap; padding: 8px 11px">
+          <img alt="British Flag" src="../country-flag-icons/3x2/GB.svg" class="flag-icon"/><i class="w3-hide-small dropdown-text">English</i></a>
+        <a href="#" class="w3-bar-item w3-button" style="white-space: nowrap; padding: 8px 11px">
+          <img alt="Bandera de España" src="../country-flag-icons/3x2/ES.svg" class="flag-icon"/><i class="w3-hide-small dropdown-text">Español</i></a>
+      </div>
+    </div>
+    <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>-->
   </div>
 </div>
 
+<script>
+  function dropdown() {
+    var x = document.getElementById("LanguageSelect");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-theme w3-hide-large" title="Close Menu">
+    <h4> <i class="fa fa-remove"></i></h4>
   </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <h4 class="w3-bar-item "><img src="../card-icons/NicePng_cards-png_835560.png" alt="Playing Cards Icon" height="35"><!--<b>Menu</b>--></h4>
+  <a class="w3-bar-item w3-button w3-hover-theme" href="#">How to play</a>
+  <a class="w3-bar-item w3-button w3-hover-theme" href="#">About Sefaradic Kanasta</a>
+  <a class="w3-bar-item w3-button w3-hover-theme" href="#">Sefardik kanasta hakkinda</a>
+  <a class="w3-bar-item w3-button w3-hover-theme" href="#">Link</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -60,8 +80,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">image</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">image</p>
     </div>
   </div>
 
@@ -72,8 +92,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">image</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">image</p>
     </div>
   </div>
 
@@ -84,13 +104,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">image</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">image</p>
     </div>
   </div>
 
   <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
+  <!--<div class="w3-center w3-padding-32">
     <div class="w3-bar">
       <a class="w3-button w3-black" href="#">1</a>
       <a class="w3-button w3-hover-black" href="#">2</a>
@@ -99,7 +119,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
       <a class="w3-button w3-hover-black" href="#">5</a>
       <a class="w3-button w3-hover-black" href="#">»</a>
     </div>
-  </div>
+  </div>-->
 
   <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding-32">
@@ -107,7 +127,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     </div>
 
     <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      <p>Made by Rıfat Rafael Birmizrahi</p>
     </div>
   </footer>
 

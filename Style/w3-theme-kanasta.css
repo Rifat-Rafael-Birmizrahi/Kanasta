@@ -36,20 +36,26 @@
 
 }
 
-l6 {
+.dropdown-text{
+    font-style: normal;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-@media (hover: none) {
-    .w3-hover-white {
-        color: #2e6830 !important;
-    }
-}
+
 /*.hover-white{}
 @media (hover: hover) {
     .hover-white:hover {
         background-color: #FFFFFF!important;
         color:#000000!important;
     }
+}
+@media (hover: none) {
+    .w3-hover-white {
+        color: #2e6830 !important;
+    }
 }*/
+/*https://stackoverflow.com/questions/17233804/how-to-prevent-sticky-hover-effects-for-buttons-on-touch-devices
+
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_theme_green
+*/
