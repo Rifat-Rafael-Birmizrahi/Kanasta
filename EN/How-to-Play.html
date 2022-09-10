@@ -55,9 +55,9 @@
     var x = document.getElementById("LanguageSelect");
     x.className = x.className.replace(" w3-show", "");
     if (currentLanguage != Language){
-      return location.href=location.href.replace(currentLanguage,Language);
+      location.href=location.href.replace(currentLanguage,Language);
     }
-    return;
+    return false;
   }
 </script>
 
