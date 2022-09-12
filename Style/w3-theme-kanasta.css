@@ -42,6 +42,20 @@
     margin-right: 5px;
 }
 
+.cards {
+    max-width: 50%;
+    height: auto;
+    width: auto\9;
+    float: left;
+
+}
+
+.cards-wrapper {
+    max-height: 400px;
+}
+
+/*162.66*/
+
 
 /*.hover-white{}
 @media (hover: hover) {
